@@ -30,9 +30,9 @@ CREATE TABLE customers (
 	customer_state VARCHAR(2), 
 	PRIMARY KEY (customer_id)
 );
+CREATE INDEX ix_customers_customer_unique_id ON customers (customer_unique_id);
 CREATE INDEX ix_customers_customer_state ON customers (customer_state);
 CREATE INDEX ix_customers_customer_zip_code_prefix ON customers (customer_zip_code_prefix);
-CREATE INDEX ix_customers_customer_unique_id ON customers (customer_unique_id);
 
 CREATE TABLE geolocation (
 	geolocation_zip_code_prefix VARCHAR(5) NOT NULL, 

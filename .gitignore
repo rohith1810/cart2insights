@@ -1,0 +1,16 @@
+# Virtual environment (recreate with: pip install -r requirements.txt)
+.venv/
+venv/
+
+# Secrets
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
